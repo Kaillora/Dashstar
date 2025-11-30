@@ -1,2 +1,15 @@
 # Dashstar
-An autonomous vehicle perception stack using a NVIDIA Jetson Orin Nano Super
+- A smart dashcam that uses computer vision, embedded machine learninhg, and object detection
+- Replicate an autonomous vehicle’s real time perception system
+- Utilize AI models and modular perception stack
+    - YOLO v8 or YOLOv11 for detecting pedestrians, vehicles, signs and traffic lights
+    - A classification neural network for identifying the state of traffic lights (red, yellow, green)
+    - U-net or Segformer for lane dection (probably U-net)
+- DeepStream for creating a system of AI pipelines to maximize efficiency for all AI models to work cohesively.
+- TensorRT for optimizing performance and latency, accelerating deep learning inference on the GPU
+- Hardware
+    - NVIDIA Jetson Orin Nano Super
+    - Touchscreen display
+    - Keyboard/mouse
+    - NVME M.2 SSD
+    - IMX219 Wide Angle Camera
