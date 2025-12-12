@@ -9,9 +9,9 @@ model = YOLO('yolov8n.pt')
 # This is critical for the Jetson Orin Nano to see the camera via OpenCV
 gstreamer_str = (
     "nvarguscamerasrc ! "
-    "video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, format=(string)NV12, framerate=(fraction)30/1 ! "
+    "video/x-raw(memory:NVMM), width=(int)1024, height=(int)600, format=(string)NV12, framerate=(fraction)30/1 ! "
     "nvvidconv flip-method=0 ! "
-    "video/x-raw, width=(int)1280, height=(int)720, format=(string)BGRx ! "
+    "video/x-raw, width=(int)1024, height=(int)600, format=(string)BGRx ! "
     "videoconvert ! "
     "video/x-raw, format=(string)BGR ! appsink"
 )
